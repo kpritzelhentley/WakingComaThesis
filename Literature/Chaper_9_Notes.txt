@@ -1,0 +1,108 @@
+General Notes from the Literature:
+Chapter 9:  Brain-Computer Interfaces for patients with disorders of consciousness
+
+Disorders of consciousness (DoC):
+- vegetative state (VS, or unresponsive wakefulness syndrome UWS)
+- minimally conscious state (MCS)
+  - MCS- : Wakefulness with nonreflexive behaviour
+  - MCS+ : MCS- with additional command following
+- coma: acute condition in which the person lacks wakefulness and awareness
+
+Factors of reduced responsiveness:
+- fluctuating arousal
+- fatigue
+- lack of interest
+- concurrent cognitive and sensory limitations from brain injury
+- motor impairments
+
+Rate of misdiagnosing of patients: about 43%
+
+
+Uses of BCI Systems for DoC patients:
+- detection of cognitive assessment of awareness
+- communication
+- environmental control
+
+Ways to determine level of consciousness:
+- asking a patient to engage in mental imagery during a functional magnetic resonance imaging (fMRI) scan
+- using electroencephalographic (EEG) responses to imagined movement (P3b signals)
+
+Problems/Challenges with patients using BCI-Systems:
+- lack of oculomotor control
+- sensory and cognitive abilities are potentially compromised by acquired brain injuries and concurrent medical complications
+- MCS patients are susceptible to aphasia
+- severe brain injury patients even with sophisticated abilities consistent with EMCS, can have difficultly answering yes/no questions
+- suffering from fatigue and fluctuating arousal
+- breach rhythm renders EEG useless in patients with skull breach
+- Contamination of the EEG by motion or sweating artifacts
+- patients often produce ERPs with reduced amplitude due to cortical atrophy (P300 signal is not as clear)
+
+Electroencephalography
+""""""""""""""""""""""
+Pros:
+- very high temporal resolution
+- non-invasive
+- signals acquired with minimal health risks
+- most practical for regular use
+Cons:
+- cannot be used in patients with skull breach
+- susceptible to non-neuronal electrical signals (noise)
+- Best results with training
+
+Event related potentials (ERP):
+EEG signals are frequently evaluated after being time-locked to a stimulus or response of interest and averaged over repeated presentations.
+This averaged, time-locked EEG signal is known as an event-related potential.
+
+Sensorimotor rhythms:
+- oscillations in magnetic or electric fields recorded over sensorimotor cortex in the mu (8–12 Hz), beta (18–30 Hz), and gamma (30–200 Hz) frequency bands
+- event-related desynchronization (ERD)
+- event-related synchronization (ERS)
+- detection of movement and movement planning
+- ERD magnitude is proportional to positive blood-oxygen-level-dependent (BOLD) responses
+
+P300 Event-Related Potentials (P3, P3a, P3b):
+- a positive-going ERP that peaks about 300 ms after a rare stimulus
+- elicited by an infrequent, oddball stimulus within a series of events from two classes
+-reflects bottom-up, preconscious processing (P3a)
+- reflects top-down, conscious information processing (P3b)
+- The P3b differs from the P3a in that it is usually largest over parietal sites and tends to occur at a longer interval from the eliciting stimulus than the P3a
+- P3b paradigms are often employed for awareness detection applications.
+
+Steady State Evoled Potentials:
+- a repetitive series of voltage deflections phase-locked to a sensory event
+- consists of a fundamental frequency corresponding to the frequency of the stimulus and its harmonics
+- recent improvements by classifying three harmonic peaks, including higher harmonics and subharmonics of the stimulation frequency, rather than only one or two peaks
+
+Slow Cortical Potentials:
+- time-locked and phase-locked ERPs elicited by sensorimotor events
+- negative deflections that arise in a latency range from 0.5 s or more preceding an actual or imagined movement
+- slow signal and patients need extensive training to regulate their SCPs
+
+
+Single- or Multiunit Neuronal Activity
+""""""""""""""""""""""""""""""""""""""
+Pros:
+- Better Control of the BCI System
+- lower attentional and learning demands during BCI operation (less training)
+Cons:
+- invasive
+- in most applications, one must tether the electrode to the skull, which results in movement of the electrode due to cardiac or respiratory pulsations
+- immune response of the brain tissue to the implant
+- degradation of the implant while it is exposed to the warm, salty environment of the human brain
+- regular implant-based BCI use generally requires a technician for device calibration
+
+- Mainly used for multidimensional control of systems (such as a cursor or robotic arm)
+
+
+BOLD Response:
+"""""""""""""
+- refers to changes in hemoglobin (Hb) that occur with brain activity
+- The two techniques to measure the BOLD response most relevant to BCI applications are fMRI and functional near-infrared spectroscopy (fNIRS)
+
+Pros:
+- informative for BCI research and development
+- fMRI approaches are useful to provide anatomically specific feedback to users
+- fNIRS is safe, noninvasive, portable, and not as sensitive to stray electrical signals as EEG
+Cons:
+- impractical because blood flow changes are slow
+- fMRI technology is expensive to obtain, operate, and maintain, and these approaches are impractical for use in daily life
