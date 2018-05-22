@@ -1,11 +1,6 @@
-from __future__ import division
-import h5py
 import numpy as np
 from numpy import matlib
-import os
-import glob
 import collections
-import mne
 import scipy.io as sio
 import matplotlib
 import matplotlib.pyplot as plt
@@ -15,18 +10,20 @@ import matplotlib.pyplot as plt
 data = np.load('/vol/nct/data/Elim_BMBF/npy/VP07_17.07_VM.bdf.mat_data.npy')
 # Array with beginning of events timestamps
 trigger = np.load('/vol/nct/data/Elim_BMBF/npy/VP07_17.07_VM.bdf.mat_trigger.npy')
-# 
-labels = np.load('/vol/nct/data/Elim_BMBF/npy/VP07_17.07_VM.bdf.mat_label.npy')
+# labels for each trigger: 
+# 1:Haeufiger Ton, 2:seltener Ton, 3:Novels, 4:Satzanfaenge, 5:Sinnvolle Satzenden, 6:Sinnlose Satzenden
+labels = np.load('/vol/nct/data/Elim_BMBF/npy/VP07_17.07_VM.bdf.mat_label.npy') * 500
 
 time = np.arange(0, data.shape[1])
-trig_time = np.arange(0, trigger.shape[1])
-
+trig_height = np.ones_like(trigger) * 400
 
 # for i in range(data.shape[0]):
 # 	plt.plot(x, data[i])
 
+print 'plotting...'
 plt.plot(time, data[1])
-plt.plot(trig_time, trigger[0])
+plt.plot(trigger, trig_height, 'ro')
+plt.plot(trigger, labels, 'bo')
 plt.show()
 
 
