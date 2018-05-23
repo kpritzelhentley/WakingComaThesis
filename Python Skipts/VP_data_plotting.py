@@ -23,7 +23,8 @@ trig_height = np.ones_like(trigger) * 400
 print 'plotting...'
 plt.plot(time, data[1])
 plt.plot(trigger, trig_height, 'ro')
-plt.plot(trigger, labels, 'bo')
+# plt.plot(trigger, labels, 'bo')
+plt.savefig('example_channel_and_trigger_plt.png')
 plt.show()
 
 
