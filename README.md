@@ -1,11 +1,14 @@
-# Waking Coma Bachelor Thesis
+# Disorders of Consciousness Bachelor Thesis
 
 ## iPython Notes
 - whos: See all created variables
 - object?: see information on variable, object or function
-- !: start system entry mode
+- !ls: start system entry mode
 
 ## Technical Terms
+
+*Paradigm*: 
+
 *Frequenzbandrelationen*:
 
 *Epoch*: a datasegment (e.g. eeg data) which was created by the onset of a stimulus
