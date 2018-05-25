@@ -28,3 +28,6 @@ First Plot of single channel and trigger points
 
 ## Sources and Sites
 CITEC Projects Redmine: https://projects.cit-ec.uni-bielefeld.de/
+
+## Issues and Errors
+- python mne filter OSError: [Errno 12] Cannot allocate memory
