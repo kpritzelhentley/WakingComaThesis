@@ -7,7 +7,7 @@
 
 ## Technical Terms
 
-*Paradigm*: 
+*Paradigm*: a typical example or pattern of something; a pattern or model
 
 *Frequenzbandrelationen*:
 
