@@ -1,0 +1,8 @@
+putative: generally considered to be; generally thought to be the thing mentioned
+
+averages
+mean (Durchschnitt): sum of values divided by number of values
+median: middle value in a sorted list
+mode: value which occurs most often
+
+contingent: occurring or existing only if (certain circumstances) are the case; dependent on

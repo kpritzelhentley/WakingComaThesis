@@ -6,9 +6,11 @@ import matplotlib
 import matplotlib.pyplot as plt
 import mne
 
-doFilt = True
+doFilt = False
+dwnfac = 5 # downsampling factor
 
 # EEG data with srate of 1/2048
+print "Loading Data..."
 data = np.load('/vol/nct/data/Elim_BMBF/npy/VP07_17.07_VM.bdf.mat_data.npy')
 # Array with beginning of events timestamps
 trigger = np.load('/vol/nct/data/Elim_BMBF/npy/VP07_17.07_VM.bdf.mat_trigger.npy')
@@ -26,8 +28,18 @@ if doFilt:
     lo = 30
     data = mne.filter.filter_data(data,srate,l_freq=hi,h_freq=lo,n_jobs=6,method='iir')
 
-print 'plotting...'
-for i in range(data.shape[0]):
+if dwnfac > 0:
+    print "Re-sampling..."
+    data = np.transpose(mne.filter.resample(data,1,dwnfac,n_jobs='cuda'))
+    # # Adjust trigger to downsampling
+    trigger = np.rint(trigger/dwnfac)
+    srate = np.rint(srate/dwnfac)
+    # # Save data
+    print "Saving..."
+    # sio.savemat(files[s]+"_band-pass30_dwn10.mat",{'data':data,'label':label,'trigger':trigger,'srate':srate})
+
+print 'Plotting...'
+for i in range(3):
     fig = plt.figure(figsize=(40.0, 10.0)) # figsize in inches
     ax = fig.add_subplot(1,1,1)
     plt.plot(time, data[i])
@@ -43,4 +55,7 @@ for i in range(data.shape[0]):
     plt.ylim = 300
     # plt.plot(trigger, labels, 'bo')
     plt.savefig('channel_plots/channel_' + str(i+1))
-    plt.close(fig)
+    plt.close(fig) # or use plt.close('all') to close all open figures
+
+del data
+print "Finished processing all files. Exiting."
