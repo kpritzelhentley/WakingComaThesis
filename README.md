@@ -20,9 +20,10 @@
 *Baseline Correction*: A perfect curve shape of analytical 2D data objects include a constant base level value, where no signals are observed. This base level is called the baseline of a 2D data object. Because of changes in experimental conditions during measurement, temperature influences or any other interference, the baseline sometimes drifts away from its original base level. In this case, the baseline of a 2D data object might be corrected after a measurement has been completed using the baseline correction function of the software. (https://www.labcognition.com/onlinehelp/en/baseline_correction.htm) --> see also mne.epochs and mne.baseline
 
 ## ToDo
-- plot single channels (from the 'data' array)
-- calculate the average over all channels of one patient and extract data segments based on labels. The P300 spike should be visible for the novel and unexpected end of sentence labels.
-
+✓ plot single channels (from the 'data' array)
+✓ calculate the average over all channels of one patient and extract data segments based on labels. The P300 spike should be visible for the novel and unexpected end of sentence labels.
+- analyse relative frequency bands
+- online calculation of relative frequency bands of eeg segments
 
 ## Data
 First Plot of single channel and trigger points
