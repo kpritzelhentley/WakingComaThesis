@@ -9,7 +9,7 @@
 
 *Paradigm*: a typical example or pattern of something; a pattern or model
 
-*Frequenzbandrelationen*:
+*Relative frequency bands*: The oscillatory neural activity can be captured with the help of the electroencephalogram. The oscillations can be sperated into and are classified in frequency bands (Delta 1-3 Hz, Theta 4-7 Hz, Alpha 8-12 Hz, Beta1 13-19 Hz, Beta2 20-29 Hz). Since every band has a different power level the bands must be compared relavtive to each other.
 
 *Epoch*: a datasegment (e.g. eeg data) which was created by the onset of a stimulus
 
