@@ -3,9 +3,10 @@ import ubicpy.sigproc as sigproc
 import numpy as np
 import pdb
 
-winsize = 1025 # 5 sec
+# 1 min of data (srate * 60 sec), this is the window on which the band
+# frewuencies are calculated on
+winsize = 12300
 overlap = 512 # 2.5 sec
-viewsize = winsize + overlap*2
 srate = 205
 
 # first resolve an EEG stream on the lab network
@@ -16,6 +17,9 @@ inlet = StreamInlet(streams[0])
 
 # data = np.zeros(32, winsize + overlap * 2)
 data = []
+# The counter tracks how many new samples have been added to the data list
+counter = 0
+bandlist = []
 
 print("pull samples...")
 while True:
@@ -23,14 +27,15 @@ while True:
     # interested in it)
     sample = inlet.pull_sample()
 
-    #pdb.set_trace()
-
     # build a list with all incoming channel columns
     data.append(sample[0])
-    print data
-    # check if number of samples of one channel is larger than viewsize
-    if len(data[0]) > viewsize:
-        data.pop(0)
+    counter += 1
+
+    # check if 410 (2 sec) new sample arrays have been added to data
+    if counter == 410:
+        if len(data) >= winsize + counter:
+            # delete first 2 seconds of incoming data
+            del data[0:counter]
         arr = np.array(data)
 
         # data was a list of rows and each row contained the nect sample for
@@ -38,5 +43,6 @@ while True:
         # all the smaples of one channel. Therefore 32 rows each with 'viewsize'
         # amount of samples.
         arr.transpose()
-        bandmat,t,f = sigproc.bandpower_relband(arr,'all',srate,winsize,overlap)
+        bandmat,t,f = sigproc.bandpower_relband(arr, 'all', srate, arr.shape[0], overlap=0, doPow=True)
+        bandlist.append(bandmat)
         print bandmat

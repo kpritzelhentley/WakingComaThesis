@@ -2,12 +2,15 @@ import numpy as np
 from numpy import matlib
 import collections
 import scipy.io as sio
+from scipy import signal
 import matplotlib
 import matplotlib.pyplot as plt
 import mne
 
-doFilt = False
-dwnfac = 5 # downsampling factor
+doPlot = False
+doFilt = True
+doSpectro = True
+dwnfac = 0 # downsampling factor
 
 # EEG data with srate of 1/2048
 print "Loading Data..."
@@ -38,24 +41,35 @@ if dwnfac > 0:
     print "Saving..."
     # sio.savemat(files[s]+"_band-pass30_dwn10.mat",{'data':data,'label':label,'trigger':trigger,'srate':srate})
 
-print 'Plotting...'
-for i in range(3):
-    fig = plt.figure(figsize=(40.0, 10.0)) # figsize in inches
-    ax = fig.add_subplot(1,1,1)
-    plt.plot(time, data[i])
-    plt.plot(trigger, trig_height, 'ro')
+if doPlot:
+    print 'Plotting...'
+    for i in range(3):
+        fig = plt.figure(figsize=(40.0, 10.0)) # figsize in inches
+        ax = fig.add_subplot(1,1,1)
+        plt.plot(time, data[i])
+        plt.plot(trigger, trig_height, 'ro')
 
-    plt.xlabel('Time')
-    plt.ylabel('Micro Volts')
-    plt.title('EEG Channel ' + str(i+1))
+        plt.xlabel('Time')
+        plt.ylabel('Micro Volts')
+        plt.title('EEG Channel ' + str(i+1))
 
-    # set the distance between ticks on the x-axis
-    start, end = ax.get_xlim()
-    ax.xaxis.set_ticks(np.arange(start, end, 500000))
-    plt.ylim = 300
-    # plt.plot(trigger, labels, 'bo')
-    plt.savefig('channel_plots/channel_' + str(i+1))
-    plt.close(fig) # or use plt.close('all') to close all open figures
+        # set the distance between ticks on the x-axis
+        start, end = ax.get_xlim()
+        ax.xaxis.set_ticks(np.arange(start, end, 500000))
+        plt.ylim = 300
+        # plt.plot(trigger, labels, 'bo')
+        plt.savefig('channel_plots/channel_' + str(i+1))
+        plt.close(fig) # or use plt.close('all') to close all open figures
+
+if doSpectro:
+    print 'Spectrogram...'
+    for i in range(32):
+        f, t, Sxx = signal.spectrogram(data[i], 2048)
+        plt.pcolormesh(t, f, Sxx)
+        plt.ylabel('Frequency [Hz]')
+        plt.xlabel('Time [sec]')
+        plt.ylim(ymax = 30)
+        plt.savefig('channel_plots/spectro_channel_' + str(i+1))
 
 del data
 print "Finished processing all files. Exiting."

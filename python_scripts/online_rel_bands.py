@@ -22,4 +22,4 @@ print 'sending data...'
 # push out every sample individually
 for i in range(data.shape[1]):
     outlet.push_sample(data[:,i].tolist())
-    time.sleep(0.1)
+    time.sleep(0.05)
