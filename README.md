@@ -15,7 +15,7 @@ __*Classification of Frequency Bands*__:
 - Delta 1-3 Hz: Deep Sleep, Unconsciousness, Coma 
 - Theta 4-7 Hz: Other Sleep Stages (REM), Emotions, Meditation, Short-Term-Memory 
 - Alpha 8-12 Hz: Relaxation, Fatigue, Eyes Closed while Conscious 
-- Beta 13-29 Hz: Awake, Aktive Thought, Konzentration 
+- Beta 13-29 Hz: Awake, Aktive Thought, Concentration 
 - Gamma > 30 Hz: Long-Time-Memory, Conscious Waking State, Will, Focus
 
 __*Epoch*__: a datasegment (e.g. eeg data) which was created by the onset of a stimulus
