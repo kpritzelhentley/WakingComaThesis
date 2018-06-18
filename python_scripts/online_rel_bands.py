@@ -13,7 +13,7 @@ data = np.load('/vol/nct/data/Elim_BMBF/npy/VP07_17.07_VM.bdf.mat_data.npy')
 # could also omit it but interrupted connections wouldn't auto-recover)
 
 # (name of stream, content type, channels, srate, channel format, source id)
-info = StreamInfo('DoC', 'EEG', 32, 2048, 'float32', 'myuid34234')
+info = StreamInfo('DoC', 'EEG', 32, 2048, 'float32', '')
 
 # create outlet
 outlet = StreamOutlet(info)
@@ -22,4 +22,4 @@ print 'sending data...'
 # push out every sample individually
 for i in range(data.shape[1]):
     outlet.push_sample(data[:,i].tolist())
-    time.sleep(2)
+    time.sleep(0.1)
