@@ -63,8 +63,8 @@ if doPlot:
 
 if doSpectro:
     print 'Spectrogram...'
-    for i in range(32):
-        f, t, Sxx = signal.spectrogram(data[i], 2048)
+    for i in range(2):
+        f, t, Sxx = signal.spectrogram(data[i], 2048, nperseg=2048)
         plt.pcolormesh(t, f, Sxx)
         plt.ylabel('Frequency [Hz]')
         plt.xlabel('Time [sec]')
