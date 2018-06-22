@@ -1,7 +1,3 @@
-# Other Git Repos
-bci-lab.eegmanager/
-bci-lab.ubicpy/
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
