@@ -1,3 +1,9 @@
 [submodule "latex"]
 	path = latex
 	url = https://git.overleaf.com/16361087rtvvgmzzwtgh
+[submodule "bci-lab.eegmanager"]
+	path = bci-lab.eegmanager
+	url = http://projects.cit-ec.uni-bielefeld.de/git/bci-lab.eegmanager.git
+[submodule "bci-lab.ubicpy"]
+	path = bci-lab.ubicpy
+	url = http://projects.cit-ec.uni-bielefeld.de/git/bci-lab.ubicpy.git
