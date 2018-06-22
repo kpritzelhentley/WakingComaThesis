@@ -37,8 +37,8 @@ First Plot of single channel and trigger points
 ![example plot](https://github.com/kpritzelhentley/WakingComaThesis/blob/master/Python%20Skipts/example_channel_and_trigger_plt.png)
 
 ## Sources and Sites
-[CITEC Projects Redmine](https://projects.cit-ec.uni-bielefeld.de/)
+- [CITEC Projects Redmine](https://projects.cit-ec.uni-bielefeld.de/)
 --> This Site can only be reached within the TechFak Network. Visit [this](https://techfak.net/dienste/netz/vpn) site to arrange the linux VPN connection via GUI. Username: kpritzelhentley, Password: Netzwerk Passwort which can be looked up via ssh and the command "tfpasswd net"
+- How to work with Git Submodules: https://git-scm.com/book/en/v2/Git-Tools-Submodules
 
 ## Issues and Errors
-- python mne filter OSError: [Errno 12] Cannot allocate memory
