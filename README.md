@@ -40,5 +40,6 @@ First Plot of single channel and trigger points
 - [CITEC Projects Redmine](https://projects.cit-ec.uni-bielefeld.de/)
 --> This Site can only be reached within the TechFak Network. Visit [this](https://techfak.net/dienste/netz/vpn) site to arrange the linux VPN connection via GUI. Username: kpritzelhentley, Password: Netzwerk Passwort which can be looked up via ssh and the command "tfpasswd net"
 - How to work with Git Submodules: https://git-scm.com/book/en/v2/Git-Tools-Submodules
+- PyQt5 Tutorial: http://zetcode.com/gui/pyqt5/firstprograms/
 
 ## Issues and Errors
