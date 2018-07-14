@@ -29,8 +29,13 @@ __*Baseline Correction*__: A perfect curve shape of analytical 2D data objects i
 ## ToDo
 - ✓ plot single channels (from the 'data' array)
 - ✓ calculate the average over all channels of one patient and extract data segments based on labels. The P300 spike should be visible for the novel and unexpected end of sentence labels.
-- calculate relative frequency bands
-- online calculation of relative frequency bands of eeg segments
+- ✓ calculate relative frequency bands
+- ✓ online calculation of relative frequency bands of eeg segments
+- ✓ create gui with electrode positions
+- Change Visualization window so that there are two columns of plots each with 16 rows
+- Do online calculation of mean and standard deviation
+- change colors of elctrodes depending on the highs and lows of the mean value inside a window
+- be able to switch between frequency bands (drop down)
 
 ## Data
 First Plot of single channel and trigger points
