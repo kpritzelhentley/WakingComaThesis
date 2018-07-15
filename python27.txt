@@ -1,6 +1,5 @@
 alabaster==0.7.7
 appdirs==1.4.0
-arandr==0.1.9
 astroid==1.4.4
 attrs==15.2.0
 autobahn==0.10.3
@@ -9,15 +8,9 @@ backports.ssl-match-hostname==3.4.0.2
 BeautifulSoup==3.2.1
 beautifulsoup4==4.4.1
 bzr==2.7.0
-catkin-pkg==0.4.6
-catkin-pkg-modules==0.4.6
-catkin-tools==0.4.4
 chardet==2.3.0
-CherryTree==0.36.4
-cliapp==1.20160109
 configobj==5.0.6
 cryptography==1.2.3
-cwiid==0.6.0
 cycler==0.9.0
 decorator==4.0.6
 defusedxml==0.4.1
