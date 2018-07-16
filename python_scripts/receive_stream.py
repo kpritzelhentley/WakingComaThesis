@@ -33,13 +33,13 @@ while True:
     # Wait until the window is large enough to calculate good bandmat
     if len(data) == winsize:
         arr = np.array(data)
-
         # data was a list of rows and each row contained the nect sample for
         # ech channel. Through transpose the array now contains rows which contain
-        # all the smaples of one channel. Therefore 32 rows each with 'viewsize'
+        # all the smaples of one channel. Therefore 32 ros each with 'viewsize'
         # amount of samples.
-        arr.transpose()
-        bandmat,t,f = sigproc.bandpower_relband(arr, 'all', srate, arr.shape[0], overlap=0, doPow=True)
+        print("arr shape: ", arr.shape)
+        bandmat,t,f = sigproc.bandpower_relband(arr, 'all', srate, 600, overlap=300, doPow=True)
+        print ("bandmat shape: ", bandmat.shape)
         bandlist.append(bandmat)
         print bandmat
 

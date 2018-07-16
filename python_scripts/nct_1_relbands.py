@@ -28,6 +28,7 @@ for s in range(0,1):
     print "Processing file ",files[s]
     struct = sio.loadmat(files[s])
     data = struct['data']
+    print("data shape: ", data.shape)
     # label = struct['label']
     # trigger = struct['trigger']
     srate = struct['srate']
@@ -36,6 +37,7 @@ for s in range(0,1):
 
 
     bandmat,t,f = sigproc.bandpower_relband(data,'all',srate,winsize,overlap)
+    print("bandmat shape: ", bandmat.shape)
     bandmeans = np.mean(bandmat,axis=2)
     bandstd = np.std(bandmat,axis=2)
     diffs = np.diff(bandmat,axis=2)
