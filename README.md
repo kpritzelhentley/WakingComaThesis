@@ -35,9 +35,12 @@ __*Etiology*__: cause, origin; specifically : the cause of a disease or abnormal
 - ✓ online calculation of relative frequency bands of eeg segments
 - ✓ create gui with electrode positions
 - Change Visualization window so that there are two columns of plots each with 16 rows
-- Do online calculation of mean and standard deviation
-- change colors of elctrodes depending on the highs and lows of the mean value inside a window
+- ✓ Do online calculation of mean and standard deviation
+- ✓ change colors of elctrodes depending on the highs and lows of the mean value inside a window
 - be able to switch between frequency bands (drop down)
+- create a legend for the electrode colors
+- either use close button or delete it
+- improve window and overlap size. be able to describe how the different sizes affect the visual output
 
 ## Data
 First Plot of single channel and trigger points
