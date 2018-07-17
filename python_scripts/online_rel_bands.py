@@ -22,5 +22,5 @@ print 'sending data...'
 # push out every sample individually
 for i in range(data.shape[1]):
     outlet.push_sample(data[:32,i].tolist())
-    # adjust sleep time to srate of 205
+    # adjust sleep time to srate of 2048
     time.sleep(0.005)
