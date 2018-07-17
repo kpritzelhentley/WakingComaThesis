@@ -41,6 +41,8 @@ __*Etiology*__: cause, origin; specifically : the cause of a disease or abnormal
 - create a legend for the electrode colors
 - either use close button or delete it
 - improve window and overlap size. be able to describe how the different sizes affect the visual output
+- set limits over a longer period of time and make them less influenced by every sample
+- use normal counter as timestamp
 
 ## Data
 First Plot of single channel and trigger points
