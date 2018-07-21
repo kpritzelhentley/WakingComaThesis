@@ -38,11 +38,12 @@ __*Etiology*__: cause, origin; specifically : the cause of a disease or abnormal
 - ✓ Do online calculation of mean and standard deviation
 - ✓ change colors of elctrodes depending on the highs and lows of the mean value inside a window
 - ✓ be able to switch between frequency bands (drop down)
-- __create a legend for the electrode colors__
+- ✓ create a legend for the electrode colors
 - ✓ either *use* close button or delete it
-- __improve window and overlap size. be able to describe how the different sizes affect the visual output__
-- __set limits over a longer period of time and make them less influenced by every sample__
-- __use normal counter as timestamp__
+- ✓ improve window and overlap size. be able to describe how the different sizes affect the visual output
+- ✓ set limits over a longer period of time and make them less influenced by every sample
+- __use differnt counters to 
+- __make window and overlap size adjustable in gui__
 
 ## Data
 First Plot of single channel and trigger points
