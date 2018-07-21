@@ -6,11 +6,16 @@ from scipy import signal
 import matplotlib
 import matplotlib.pyplot as plt
 import mne
+import ubicpy.sigproc as sigproc
 
 doPlot = False
-doFilt = True
-doSpectro = True
-dwnfac = 0 # downsampling factor
+doFilt = False
+doSpectro = False
+doDownSmpl= True
+
+srate = int(2048/10)
+winsize = srate * 60 # don't go lower than 10 sek windows
+overlap = winsize/10
 
 # EEG data with srate of 1/2048
 print "Loading Data..."
@@ -31,15 +36,22 @@ if doFilt:
     lo = 30
     data = mne.filter.filter_data(data,srate,l_freq=hi,h_freq=lo,n_jobs=6,method='iir')
 
-if dwnfac > 0:
-    print "Re-sampling..."
-    data = np.transpose(mne.filter.resample(data,1,dwnfac,n_jobs='cuda'))
-    # # Adjust trigger to downsampling
-    trigger = np.rint(trigger/dwnfac)
-    srate = np.rint(srate/dwnfac)
-    # # Save data
-    print "Saving..."
-    # sio.savemat(files[s]+"_band-pass30_dwn10.mat",{'data':data,'label':label,'trigger':trigger,'srate':srate})
+if doDownSmpl:
+    data = data[::,::10]
+
+if relBandPlot:	
+    data = data.transpose()
+    relband, t, f = sigproc.bandpower_relband(arr, 'all', srate, winsize, overlap, doPow=True)
+    bandmeans = np.mean(relband,axis=2)
+    bandstd = np.std(relband,axis=2)
+
+    plt.xlabel('Time')
+    plt.ylabel('Micro Volts')
+    plt.title('Data Section with Mean and Standard Deviation')
+    
+    plt.plot(time, data[1, 400:4000])
+    
+    plt.savefig('relband mean and std')
 
 if doPlot:
     print 'Plotting...'
@@ -73,3 +85,4 @@ if doSpectro:
 
 del data
 print "Finished processing all files. Exiting."
+
