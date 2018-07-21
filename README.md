@@ -42,8 +42,9 @@ __*Etiology*__: cause, origin; specifically : the cause of a disease or abnormal
 - ✓ either *use* close button or delete it
 - ✓ improve window and overlap size. be able to describe how the different sizes affect the visual output
 - ✓ set limits over a longer period of time and make them less influenced by every sample
-- __use differnt counters to 
+- __use a counter to dictate how often relband is calulated__
 - __make window and overlap size adjustable in gui__
+- __consider setting one upper and lower limit for all frequencies in order to see how hight one frequency is in relation to the others__
 
 ## Data
 First Plot of single channel and trigger points
