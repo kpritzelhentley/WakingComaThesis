@@ -79,4 +79,6 @@ First Plot of single channel and trigger points
 - How to work with Git Submodules: https://git-scm.com/book/en/v2/Git-Tools-Submodules
 - PyQt5 Tutorial: http://zetcode.com/gui/pyqt5/firstprograms/
 
+- Resting-state EEG study of comatose patients: a connectivity and frequency analysis to find differences between vegetative and minimally conscious states: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3812750/
+
 ## Issues and Errors
