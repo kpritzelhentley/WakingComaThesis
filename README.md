@@ -28,6 +28,29 @@ __*Baseline Correction*__: A perfect curve shape of analytical 2D data objects i
 
 __*Etiology*__: cause, origin; specifically : the cause of a disease or abnormal condition 
 
+__*Pathological*__: involving or caused by a physical or mental disease
+
+__*Anoxia*__: The term anoxia means a total depletion in the level of oxygen, an extreme form of hypoxia or "low oxygen". (Used to describe a type of Coma: Anoxic Coma)
+
+__*Nociceptive Stimulus*__: a painful, sometimes detrimental or injurious, stimulus. A nociceptor is a sensory neuron that responds to damaging or potentially damaging stimuli.
+
+__*Modulate*__: exert a modifying or controlling influence on.
+
+__*Novelty*__: the quality of being new, original, or unusual. A novelty P300 component indicates attention orienting.
+
+__*Elicit*__: evoke or draw out (a reaction, answer, or fact) from someone.
+
+__*Contingent*__: occurring or existing only if (certain circumstances) are the case; dependent on
+
+__*Putative*__: generally considered to be; generally thought to be the thing mentioned
+
+__*Averages*__: 
+- mean (Durchschnitt): sum of values divided by number of values
+- median: middle value in a sorted list
+- mode: value which occurs most often
+
+__*Endogenous*__: having an internal cause or origin. (Antonym: Exogenous)
+
 ## ToDo
 - ✓ plot single channels (from the 'data' array)
 - ✓ calculate the average over all channels of one patient and extract data segments based on labels. The P300 spike should be visible for the novel and unexpected end of sentence labels.
