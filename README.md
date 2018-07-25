@@ -51,6 +51,12 @@ __*Averages*__:
 
 __*Endogenous*__: having an internal cause or origin. (Antonym: Exogenous)
 
+__*Coherence*__: (as a measure of connectivity) Coherence is a measure of how effectively two sites are able to link and unlink, to share information.  It is a measure, like the correlation coefficient, which ranges from 0-1 or (in percentage terms) from 0-100. (https://brain-trainer.com/answers/getting-started/coherence-synchrony/)
+
+__*Synchrony*__: Synchrony indicates that two waveforms are coherent (consistent relationship between their peaks and valleys) and in phase (peak and valleys happening at the same time in both waveforms.) Why would two signals be synchronous?
+1. They are coming from two sites communicating with one another in a particular frequency; or
+2. Both are coming from the same source.
+
 ## ToDo
 - ✓ plot single channels (from the 'data' array)
 - ✓ calculate the average over all channels of one patient and extract data segments based on labels. The P300 spike should be visible for the novel and unexpected end of sentence labels.
