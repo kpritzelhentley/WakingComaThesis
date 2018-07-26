@@ -79,6 +79,8 @@ __*Somatosensory*__: relating to or denoting a sensation (such as pressure, pain
 - __use a counter to dictate how often relband is calulated__
 - __make window and overlap size adjustable in gui__
 - __consider setting one upper and lower limit for all frequencies in order to see how hight one frequency is in relation to the others__
+- __implement visualisation which shows multiple frequencies at the same time, either on one or multiple heads__
+
 
 ## Data
 First Plot of single channel and trigger points
