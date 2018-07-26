@@ -59,6 +59,8 @@ __*Synchrony*__: Synchrony indicates that two waveforms are coherent (consistent
 
 __*Volition*__: an act of making a choice or decision; also : a choice or decision made 
 
+__*Somatosensory*__: relating to or denoting a sensation (such as pressure, pain, or warmth) which can occur anywhere in the body
+
 
 ## ToDo
 - ✓ plot single channels (from the 'data' array)
