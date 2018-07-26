@@ -57,6 +57,9 @@ __*Synchrony*__: Synchrony indicates that two waveforms are coherent (consistent
 1. They are coming from two sites communicating with one another in a particular frequency; or
 2. Both are coming from the same source.
 
+__*Volition*__: an act of making a choice or decision; also : a choice or decision made 
+
+
 ## ToDo
 - ✓ plot single channels (from the 'data' array)
 - ✓ calculate the average over all channels of one patient and extract data segments based on labels. The P300 spike should be visible for the novel and unexpected end of sentence labels.
