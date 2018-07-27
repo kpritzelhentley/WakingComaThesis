@@ -76,9 +76,9 @@ __*Somatosensory*__: relating to or denoting a sensation (such as pressure, pain
 - ✓ either *use* close button or delete it
 - ✓ improve window and overlap size. be able to describe how the different sizes affect the visual output
 - ✓ set limits over a longer period of time and make them less influenced by every sample
-- __use a counter to dictate how often relband is calulated__
-- __make window and overlap size adjustable in gui__
-- __consider setting one upper and lower limit for all frequencies in order to see how hight one frequency is in relation to the others__
+- ✓ se a counter to dictate how often relband is calulated
+- ✓ make window and overlap size adjustable in gui
+- ~~nsider setting one upper and lower limit for all frequencies in order to see how hight one frequency is in relation to the others~~
 - __implement visualisation which shows multiple frequencies at the same time, either on one or multiple heads__
 
 
