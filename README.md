@@ -68,7 +68,7 @@ __*Somatosensory*__: relating to or denoting a sensation (such as pressure, pain
 - ✓ calculate relative frequency bands
 - ✓ online calculation of relative frequency bands of eeg segments
 - ✓ create gui with electrode positions
-- __Change Visualization window so that there are two columns of plots each with 16 rows__
+- ✓ Change Visualization window so that there are two columns of plots each with 16 rows
 - ✓ Do online calculation of mean and standard deviation
 - ✓ change colors of elctrodes depending on the highs and lows of the mean value inside a window
 - ✓ be able to switch between frequency bands (drop down)
