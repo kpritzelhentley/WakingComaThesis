@@ -80,6 +80,7 @@ __*Somatosensory*__: relating to or denoting a sensation (such as pressure, pain
 - ✓ make window and overlap size adjustable in gui
 - ~~nsider setting one upper and lower limit for all frequencies in order to see how hight one frequency is in relation to the others~~
 - __implement visualisation which shows multiple frequencies at the same time, either on one or multiple heads__
+- __add button or option to calculate overall mean and std. therefore also store all of stream in an array__ 
 
 
 ## Data
