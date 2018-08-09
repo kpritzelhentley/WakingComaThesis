@@ -99,3 +99,4 @@ First Plot of single channel and trigger points
 - Digital Signal Processing: http://www.dspguide.com/ch2/1.htm
 
 ## Issues and Errors
+- __when increasing the window size too fast via the slider or line edit then the window size is larger than the number samples arrived in the buffer, throwing an error__
