@@ -79,7 +79,9 @@ __*Somatosensory*__: relating to or denoting a sensation (such as pressure, pain
 - ✓ se a counter to dictate how often relband is calulated
 - ✓ make window and overlap size adjustable in gui
 - ~~nsider setting one upper and lower limit for all frequencies in order to see how hight one frequency is in relation to the others~~
-- __implement visualisation which shows multiple frequencies at the same time, either on one or multiple heads__
+- ✓ implement visualisation which shows multiple frequencies at the same time, either on one or multiple heads
+- __add button or option to calculate overall mean and std. therefore also store all of stream in an array__ 
+- __change window and overlap size in seconds and not sample numbers (since other users might have different srates)__
 
 
 ## Data
@@ -97,3 +99,4 @@ First Plot of single channel and trigger points
 - Digital Signal Processing: http://www.dspguide.com/ch2/1.htm
 
 ## Issues and Errors
+- __when increasing the window size too fast via the slider or line edit then the window size is larger than the number samples arrived in the buffer, throwing an error__
