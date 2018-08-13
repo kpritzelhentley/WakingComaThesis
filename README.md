@@ -82,6 +82,7 @@ __*Somatosensory*__: relating to or denoting a sensation (such as pressure, pain
 - ✓ implement visualisation which shows multiple frequencies at the same time, either on one or multiple heads
 - __add button or option to calculate overall mean and std. therefore also store all of stream in an array__ 
 - __change window and overlap size in seconds and not sample numbers (since other users might have different srates)__
+- __make a better distinction between windowsize inside relband calculation and windowsize over which relband calulation takes place__
 
 
 ## Data
