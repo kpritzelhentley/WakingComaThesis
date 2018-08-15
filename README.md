@@ -98,6 +98,7 @@ First Plot of single channel and trigger points
 - Resting-state EEG study of comatose patients: a connectivity and frequency analysis to find differences between vegetative and minimally conscious states: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3812750/
 
 - Digital Signal Processing: http://www.dspguide.com/ch2/1.htm
+- BibTex Citation Machine: http://www.citationmachine.net/bibtex/cite-a-website
 
 ## Issues and Errors
 - __when increasing the window size too fast via the slider or line edit then the window size is larger than the number samples arrived in the buffer, throwing an error__
