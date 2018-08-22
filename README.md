@@ -81,7 +81,8 @@ __*Somatosensory*__: relating to or denoting a sensation (such as pressure, pain
 - ~~nsider setting one upper and lower limit for all frequencies in order to see how hight one frequency is in relation to the others~~
 - ✓ implement visualisation which shows multiple frequencies at the same time, either on one or multiple heads
 - __add button or option to calculate overall mean and std. therefore also store all of stream in an array__ 
-- __change window and overlap size in seconds and not sample numbers (since other users might have different srates)__
+- ✓ change window and overlap size in seconds and not sample numbers (since other users might have different srates)
+- __make a better distinction between windowsize inside relband calculation and windowsize over which relband calulation takes place__
 
 
 ## Data
@@ -97,6 +98,7 @@ First Plot of single channel and trigger points
 - Resting-state EEG study of comatose patients: a connectivity and frequency analysis to find differences between vegetative and minimally conscious states: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3812750/
 
 - Digital Signal Processing: http://www.dspguide.com/ch2/1.htm
+- BibTex Citation Machine: http://www.citationmachine.net/bibtex/cite-a-website
 
 ## Issues and Errors
 - __when increasing the window size too fast via the slider or line edit then the window size is larger than the number samples arrived in the buffer, throwing an error__
