@@ -9,7 +9,7 @@ import mne
 import ubicpy.sigproc as sigproc
 
 doPlot = False
-doFilt = False
+doFilt = True
 doSpectro = False
 doDownSmpl= True
 
@@ -39,7 +39,7 @@ if doFilt:
 if doDownSmpl:
     data = data[::,::10]
 
-if relBandPlot:	
+if relBandPlot:
     data = data.transpose()
     relband, t, f = sigproc.bandpower_relband(arr, 'all', srate, winsize, overlap, doPow=True)
     bandmeans = np.mean(relband,axis=2)
@@ -48,9 +48,9 @@ if relBandPlot:
     plt.xlabel('Time')
     plt.ylabel('Micro Volts')
     plt.title('Data Section with Mean and Standard Deviation')
-    
+
     plt.plot(time, data[1, 400:4000])
-    
+
     plt.savefig('relband mean and std')
 
 if doPlot:
@@ -85,4 +85,3 @@ if doSpectro:
 
 del data
 print "Finished processing all files. Exiting."
-

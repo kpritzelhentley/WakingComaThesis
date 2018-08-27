@@ -21,7 +21,7 @@ ncount = np.zeros((len(files),5,32),dtype=np.int)
 pratio = np.zeros((len(files),5,32),dtype=np.float64)
 nratio = np.zeros((len(files),5,32),dtype=np.float64)
 
-for s in range(0,1):
+for s in range(len(files)):
     # if ('VP1_' in files[s])|('VP5_' in files[s])|('VP9' in files[s])|('VP19' in files[s]):
     #     continue
 
@@ -145,7 +145,8 @@ for s in range(0,1):
             # ax.yaxis.set_ticks(np.arange(0,1.5,.5))
 
         plt.xlabel('Time [min]')
-        plt.show()
+        plt.savefig("relBand_figs/Relative_Frequency_Bands_Mean_And_Std_Patient_" + str(s), dpi=250)
+        # plt.show()
 
 
         # ax.legend((l1,l2,l3,l4,l5),('delta','theta','alpha','beta1','beta2'))

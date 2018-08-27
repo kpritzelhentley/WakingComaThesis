@@ -52,6 +52,6 @@ for i in range (data.shape[0]):
     # plot vertical line a 300ms (0.3 * 2048 = 614)
     plt.axvline(x=614, color='r')
     plt.savefig('p300_data/p300_channel_' + str(i+1))
-    plt.close(fig) # or use plt.close('all') to close all open figures
+    # plt.close(fig) # or use plt.close('all') to close all open figures
 
 del data
