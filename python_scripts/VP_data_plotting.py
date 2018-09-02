@@ -26,7 +26,7 @@ trigger = np.load('/vol/nct/data/Elim_BMBF/npy/VP07_17.07_VM.bdf.mat_trigger.npy
 # 1:Haeufiger Ton, 2:seltener Ton, 3:Novels, 4:Satzanfaenge, 5:Sinnvolle Satzenden, 6:Sinnlose Satzenden
 labels = np.load('/vol/nct/data/Elim_BMBF/npy/VP07_17.07_VM.bdf.mat_label.npy') * 500
 
-time = np.arange(0, data.shape[1])
+time = np.arange(0, data.shape[1] / 2048 / 60)
 trig_height = np.ones_like(trigger) * 200
 
 if doFilt:
@@ -61,7 +61,7 @@ if doPlot:
         plt.plot(time, data[i])
         plt.plot(trigger, trig_height, 'ro')
 
-        plt.xlabel('Time')
+        plt.xlabel('Time in Minutes')
         plt.ylabel('Micro Volts')
         plt.title('EEG Channel ' + str(i+1))
 
