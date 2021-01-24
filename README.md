@@ -1,5 +1,7 @@
 # Disorders of Consciousness Bachelor Thesis
 
+## All thesis relevant code can be found in the 'python_scripts' folder.
+
 ## iPython Notes
 - whos: See all created variables
 - object?: see information on variable, object or function
